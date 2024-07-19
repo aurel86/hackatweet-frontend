@@ -1,0 +1,54 @@
+.registerContainer {
+    box-sizing: content-box;
+    width: 100%;
+    background: #151D27;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* .closeBtn {
+    color:white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  } */
+  
+  /* .logoContainer img {
+    width: 60px;
+    margin-bottom: 20px;
+    transform: scaleY(-1);
+  } */
+  
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .registerSection input {
+    color: white;
+    padding: 0.5em;
+    background-color: #151D27;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .signInBtn button {
+    background-color: White;
+    color: black;
+    border: none;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 1rem;
+    width: 100%;
+  }

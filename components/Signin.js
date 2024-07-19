@@ -3,9 +3,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { login, logout } from '../reducers/user';
 import Home from './Home';
+import { useRouter } from 'next/router';
 
 function Signin() {
     const dispatch = useDispatch();
+    const router = useRouter();
     
     //const user = useSelector((state) => state.user);
 
@@ -25,7 +27,8 @@ function Signin() {
                     dispatch(login({ username: signInUsername, token: data.token }));
                     setSignInUsername('');
                     setSignInPassword('');
-                    //setIsModalVisible(false)
+                    router.push('/homepage')
+                    
                 }
             });
     };
@@ -34,9 +37,9 @@ function Signin() {
         <div className={styles.registerContainer}>
             {/* <div className={styles.registerSection}> */}
                 <h2>Sign-in</h2>
-                <input type="text" placeholder="Username" id="signInUsername" onChange={(e) => setSignInUsername(e.target.value)} value={signInUsername} />
-                <input type="password" placeholder="Password" id="signInPassword" onChange={(e) => setSignInPassword(e.target.value)} value={signInPassword} />
-                <button id="connection" onClick={() => handleConnection()}>Signin</button>
+                <input type="text" className={styles.registerSection} placeholder="Username" id="signInUsername" onChange={(e) => setSignInUsername(e.target.value)} value={signInUsername} />
+                <input type="password" className={styles.registerSection} placeholder="Password" id="signInPassword" onChange={(e) => setSignInPassword(e.target.value)} value={signInPassword} />
+                <button id="connection" className={styles.signInBtn} onClick={() => handleConnection()}>Signin</button>
             {/* </div> */}
         </div>
     );

@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Tweet from './Tweet';
 import LastTweets from './LastTweets';
 import Trends from './Trends';
+import SignUp from './SignUp';
+import Signin from './Signin';
 
 function Home() {
   return (
@@ -29,6 +31,8 @@ function Home() {
       
       {/* {Trends} */}
       </div>
+      {Signin}
+      {SignUp}
 
 
 
