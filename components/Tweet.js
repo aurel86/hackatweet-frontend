@@ -1,7 +1,7 @@
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Tweet.module.css';
 import Image from 'next/image';
 
-function Home() {
+function Tweet() {
   return (
 
     <div className={styles.container}>
@@ -33,5 +33,4 @@ function Home() {
   );
 }
 
-export default Home;
-        
+export default Tweet;
