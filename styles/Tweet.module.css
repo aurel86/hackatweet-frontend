@@ -1,0 +1,16 @@
+.inputTweet {
+   /* border: 2px solid blue ; */
+   height: 40px;
+   width: 400px;
+   display: flex;
+   margin-left: 5px;
+   
+   
+}
+
+.buttonClick {
+    border: 2px solid red;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}

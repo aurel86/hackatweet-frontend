@@ -19,8 +19,9 @@ function Home() {
         </div>
       </div>
       <div className={styles.containerCentral}>
+      <h1 className={styles.h1}>Home</h1>
         <div className={styles.inputContainer}>
-        {Tweet}
+        <Tweet/>
         </div>
         
         <div className={styles.tweetContainer}>
@@ -33,7 +34,7 @@ function Home() {
       </div>
       {Signin}
       {SignUp}
-
+      
 
 
     </div>
