@@ -2,9 +2,10 @@ import '../styles/globals.css';
 import Head from 'next/head';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
+import tweets from '../reducers/tweets';
 
 const store = configureStore({
-  reducer: {},
+  reducer: {tweets},
  });
 
 function App({ Component, pageProps }) {

@@ -1,5 +1,8 @@
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
+import Tweet from './Tweet';
+import LastTweets from './LastTweets';
+import Trends from './Trends';
 
 function Home() {
   return (
@@ -15,15 +18,15 @@ function Home() {
       </div>
       <div className={styles.containerCentral}>
         <div className={styles.inputContainer}>
-        <h1 className={styles.h1}>Home</h1>
-        {/* {Tweet} */}
+        {Tweet}
         </div>
+        
         <div className={styles.tweetContainer}>
           {/* {LastTweets} */}
         </div>
       </div>
       <div className={styles.containerRight}>
-      <h1 className={styles.h1}>Trends</h1>
+      
       {/* {Trends} */}
       </div>
 

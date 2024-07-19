@@ -2,6 +2,7 @@ import styles from '../styles/Signup.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { login, logout } from '../reducers/user';
+import Home from './Home';
 
 function Signin() {
     const dispatch = useDispatch();
