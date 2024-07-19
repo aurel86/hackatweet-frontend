@@ -1,5 +1,7 @@
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
+import SignUp from './SignUp';
+import Signin from './Signin';
 
 function Home() {
   return (
@@ -26,6 +28,8 @@ function Home() {
       <h1 className={styles.h1}>Trends</h1>
       {/* {Trends} */}
       </div>
+      {Signin}
+      {SignUp}
 
 
 
